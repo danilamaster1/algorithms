@@ -13,14 +13,14 @@ start = time.time()
 
 
 # При значении (124567353) время выполнения: 1.1c
-# O(2^n)
+# O(n!)
 def counter(num, even=0, odd=0):
     if num == 0:                                                # O(1)
         return f'Четных: {even}, нечетных: {odd}'               # O(1)
     else:
         if num % 10 % 2 == 0:                                   # O(1)
-            return counter(num // 10, even + 1, odd)            # O(2^n)
-        return counter(num // 10, even, odd + 1)                # O(2^n)
+            return counter(num // 10, even + 1, odd)            # O(n!)
+        return counter(num // 10, even, odd + 1)                # O(n!)
 
 
 if __name__ == '__main__':
