@@ -39,7 +39,7 @@ def revers():
     count = len(num)
     k = range(count)
 
-    for i in k:
+    for _ in k:
         new_num = new_num + str(int(num) % 10)
         num = int(num) // 10
 
