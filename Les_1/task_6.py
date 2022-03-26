@@ -1,5 +1,6 @@
 """6. Пользователь вводит номер буквы в алфавите. Определить, какая это буква."""
 
+
 class MyErr(Exception):
     def __init__(self, txt):
         self.txt = txt
